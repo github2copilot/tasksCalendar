@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 50% 98%;
+    --foreground: 220 10% 30%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 30%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 30%;
+    
+    --primary: 250 95% 76%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 180 80% 92%;
+    --secondary-foreground: 220 10% 30%;
+    
+    --muted: 220 10% 94%;
+    --muted-foreground: 220 10% 50%;
+    
+    --accent: 326 100% 95%;
+    --accent-foreground: 220 10% 30%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+    --ring: 250 95% 76%;
+    
+    --radius: 0.75rem;
+  }
+}
+
+.calendar-grid {
+  background: linear-gradient(to right bottom, hsl(var(--secondary)), hsl(var(--background)));
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
